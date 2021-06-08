@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="markdown入门笔记0. 前言 参考书籍《了不起的Markdown》  1. Markdown简介 Markdown是由John Gruber在Aaron Swartz的帮助下开发的标记语言，发布于2004年; Markdown是由一些简单的符号，组成的用于排版的标记语言,相当于简化了的HTML语言,让使用者专注于写作; Markdown文档支持HTML标记语言的内嵌，用于处理一些特殊需求，如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown简介">
+<meta property="og:url" content="http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/index.html">
+<meta property="og:site_name" content="runoob-achui">
+<meta property="og:description" content="markdown入门笔记0. 前言 参考书籍《了不起的Markdown》  1. Markdown简介 Markdown是由John Gruber在Aaron Swartz的帮助下开发的标记语言，发布于2004年; Markdown是由一些简单的符号，组成的用于排版的标记语言,相当于简化了的HTML语言,让使用者专注于写作; Markdown文档支持HTML标记语言的内嵌，用于处理一些特殊需求，如">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-08T14:27:17.000Z">
+<meta property="article:modified_time" content="2021-06-08T16:29:49.534Z">
+<meta property="article:author" content="achui">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>markdown简介</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/2021/06/08/%E4%BA%86%E8%A7%A3Unicode%E7%BC%96%E7%A0%81/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/2021/06/08/%E9%80%9A%E8%BF%87hexo&githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&text=markdown简介"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&is_video=false&description=markdown简介"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=markdown简介&body=Check out this article: http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&name=markdown简介&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&t=markdown简介"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">markdown入门笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">0. 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Markdown%E7%AE%80%E4%BB%8B"><span class="toc-number">1.2.</span> <span class="toc-text">1. Markdown简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">2. Markdown基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%A0%87%E9%A2%98"><span class="toc-number">1.3.1.</span> <span class="toc-text">2.1 标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%B2%97%E4%BD%93%E5%92%8C%E6%96%9C%E4%BD%93"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.2 粗体和斜体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%AE%B5%E8%90%BD%E4%B8%8E%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.3.3.</span> <span class="toc-text">2.3 段落与换行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">2.4 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.3.5.</span> <span class="toc-text">2.5 分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E5%9B%BE%E7%89%87%E5%92%8C%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.6.</span> <span class="toc-text">2.6 图片和链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%E5%92%8C%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.3.7.</span> <span class="toc-text">2.7 行内代码和代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E5%BC%95%E7%94%A8"><span class="toc-number">1.3.8.</span> <span class="toc-text">2.8 引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-%E8%BD%AC%E4%B9%89"><span class="toc-number">1.3.9.</span> <span class="toc-text">2.9 转义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95GFM"><span class="toc-number">1.4.</span> <span class="toc-text">3 扩展语法GFM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.4.1.</span> <span class="toc-text">3.1 删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.4.2.</span> <span class="toc-text">3.2 表情符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.3 表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.4.</span> <span class="toc-text">3.4 任务列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E5%9B%B4%E6%A0%8F%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.4.5.</span> <span class="toc-text">3.5 围栏代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E9%94%9A%E7%82%B9"><span class="toc-number">1.4.6.</span> <span class="toc-text">3.6 锚点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.5.</span> <span class="toc-text">4. 编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.5.1.</span> <span class="toc-text">4.1 常使用的编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-vscode%E4%B8%AD%E6%90%AD%E9%85%8D%E7%9A%84markdown%E6%8F%92%E4%BB%B6"><span class="toc-number">1.5.2.</span> <span class="toc-text">4.2 vscode中搭配的markdown插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E5%B7%A5%E5%85%B7%E6%94%AF%E6%8C%81%E7%9A%84%E5%85%B6%E4%BB%96%E7%9A%84%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95"><span class="toc-number">1.5.3.</span> <span class="toc-text">4.3 工具支持的其他的扩展语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E5%86%85%E5%B5%8Chtml%E8%AF%AD%E6%B3%95"><span class="toc-number">1.5.4.</span> <span class="toc-text">4.4 内嵌html语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">1.5.5.</span> <span class="toc-text">4.5 数学公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">5. 总结</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        markdown简介
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">achui</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-06-08T14:27:17.000Z" itemprop="datePublished">2021-06-08</time>
+        
+        (Updated: <time datetime="2021-06-08T16:29:49.534Z" itemprop="dateModified">2021-06-09</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="markdown入门笔记"><a href="#markdown入门笔记" class="headerlink" title="markdown入门笔记"></a>markdown入门笔记</h1><h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h2><ul>
+<li>参考书籍《了不起的Markdown》</li>
+</ul>
+<h2 id="1-Markdown简介"><a href="#1-Markdown简介" class="headerlink" title="1. Markdown简介"></a>1. Markdown简介</h2><ul>
+<li>Markdown是由John Gruber在Aaron Swartz的帮助下开发的标记语言，发布于2004年;</li>
+<li>Markdown是由一些简单的符号，组成的用于排版的标记语言,相当于简化了的HTML语言,让使用者专注于写作;</li>
+<li>Markdown文档支持HTML标记语言的内嵌，用于处理一些特殊需求，如图像的排版;</li>
+<li>Markdown本身功能有限，为了满足日益增加的使用场景，产生了许多扩展语法，在基础语法之上新增了表格，任务列表，围栏代码块等功能;</li>
+<li>Markdown源码实现的文档可以由不同的编辑器，生成各种不同的格式（如PDF，图片等）;</li>
+<li>Markdown不同的实现，催生了CommonMark规范的发布（2012年）,2017年GitHub基于规范标准发布了GitHub Flavored Markdown(简称GFM),是目前使用的最广泛的扩展版本;</li>
+</ul>
+<blockquote>
+<p>综上所述,学习Markdown的几点建议:</p>
+<ul>
+<li>掌握Markdown的基本语法;</li>
+<li>掌握一门通用的基于CommonMark规范的扩展版本，如GFM;</li>
+<li>选择一个合适的编辑器用于渲染解析源码(如vscode,Typora等);</li>
+</ul>
+</blockquote>
+<h2 id="2-Markdown基础语法"><a href="#2-Markdown基础语法" class="headerlink" title="2. Markdown基础语法"></a>2. Markdown基础语法</h2><p>同一种效果可以由多种方式去实现，类似茴香豆的多种写法，以下每种效果的规范只介绍最常使用的方式，有兴趣的朋友可以读下原书。</p>
+<h3 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h3><p>语法如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># + 空格 + 标题内容</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li><code>#</code>号的个数表示了标题的等级;</li>
+<li>Markdown中最多支持六级标题(一级标题最大，既使用一个<code>#</code>);</li>
+<li>建议标题的前后都空一行，（标题在文档开头除外）;</li>
+</ul>
+</blockquote>
+<h3 id="2-2-粗体和斜体"><a href="#2-2-粗体和斜体" class="headerlink" title="2.2 粗体和斜体"></a>2.2 粗体和斜体</h3><p>语法如下所示：</p>
+<p><strong>粗体：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">** + 内容 + **</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>斜体：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> + 内容 + <span class="emphasis">*</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>倾斜加粗的效果可以使用<code>*** + 内容 + ***</code>的方式表示;</li>
+</ul>
+</blockquote>
+<h3 id="2-3-段落与换行"><a href="#2-3-段落与换行" class="headerlink" title="2.3 段落与换行"></a>2.3 段落与换行</h3><p>语法如下所示：</p>
+<p><strong>段落：</strong></p>
+<blockquote>
+<ul>
+<li>如果行与行之间没有空格，则会被视为同一段落;</li>
+<li>如果行与行之间有空行，则会被视为不同的段落;</li>
+<li>空行是指行内什么都没有，或者只有空格和制表符;</li>
+</ul>
+</blockquote>
+<p><strong>换行：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">空格 + 空格 + 回车</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-列表"><a href="#2-4-列表" class="headerlink" title="2.4 列表"></a>2.4 列表</h3><p>语法如下所示：</p>
+<p><strong>有序列表：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数字符号 + 英文句号 + 空格 + 列表内容</span><br></pre></td></tr></table></figure>
+
+<p><strong>无序列表：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> + 空格 + 列表内容</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：<br>列表支持相互嵌套：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">第一层列表</span><br><span class="line">TAB + 第二层列表</span><br><span class="line">TAB + TAB + 第三层列表</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<ol>
+<li>动物<ul>
+<li>猫<ul>
+<li>大花猫</li>
+<li>小花猫</li>
+</ul>
+</li>
+<li>狗</li>
+</ul>
+</li>
+<li>植物<ul>
+<li>树</li>
+<li>花</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-5-分割线"><a href="#2-5-分割线" class="headerlink" title="2.5 分割线"></a>2.5 分割线</h3><p>语法如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>分割线需要使用至少3个以上的<code>-</code>来标记;</li>
+<li>行内不能有其他的字符;</li>
+<li>可以在标记符中间加上空格;</li>
+</ul>
+</blockquote>
+<h3 id="2-6-图片和链接"><a href="#2-6-图片和链接" class="headerlink" title="2.6 图片和链接"></a>2.6 图片和链接</h3><p>语法如下所示：</p>
+<p><strong>图片：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片替代文字</span>](<span class="link">图片地址</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>链接：</strong></p>
+<ul>
+<li>文字链接</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接文字</span>](<span class="link">链接地址</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>引用链接</li>
+</ul>
+<p>引用链接可以使得源码排版更为简洁，易读</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接文字</span>](<span class="link">链接标记</span>)</span><br><span class="line">[<span class="symbol">链接标记</span>]: <span class="link">链接地址</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">百度</span>][<span class="symbol">百度地址</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">百度地址</span>]: <span class="link">https://www.baidu.com</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+<ul>
+<li>网址链接</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">&lt;URL或邮箱地址&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">&lt;https://www.baidu.com&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a></p>
+<blockquote>
+<p>在扩展语法中，以<code>www或http://</code>开头的URL地址会被自动识别，通过使用行内代码语法包裹url可以避免被自动识别为网址链接。</p>
+</blockquote>
+<h3 id="2-7-行内代码和代码块"><a href="#2-7-行内代码和代码块" class="headerlink" title="2.7 行内代码和代码块"></a>2.7 行内代码和代码块</h3><p>语法形式如下所示：</p>
+<p><strong>行内代码：</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">`内容`</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>代码块：</strong></p>
+<p>基本语法中代码块的形式通常以TAB或者四个空格的形式开头，但是通常使用扩展语法中的围栏代码块用于代替这种不易读写的表达方式。详情请查看扩展语法中的围栏代码块一节。</p>
+<pre><code>print(&quot;hello python3&quot;)
+</code></pre>
+<h3 id="2-8-引用"><a href="#2-8-引用" class="headerlink" title="2.8 引用"></a>2.8 引用</h3><p>语法形式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 引用内容</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>多行引用也可以在每一行的开头都插入<code>&gt;</code>;</li>
+<li>在引用中可以嵌套引用;</li>
+<li>在引用中可以使用其他markdown的语法;</li>
+<li>引用时建议以<code>&gt; + 空格 + 引用内容</code>的方式来进行书写。</li>
+</ul>
+</blockquote>
+<h3 id="2-9-转义"><a href="#2-9-转义" class="headerlink" title="2.9 转义"></a>2.9 转义</h3><p>转义的作用是：想在Markdown文件中插入一些标记符号，但又不想让这些符号被渲染时，可以使用转义字符的形式，<code>\ + 特殊字符</code></p>
+<h2 id="3-扩展语法GFM"><a href="#3-扩展语法GFM" class="headerlink" title="3 扩展语法GFM"></a>3 扩展语法GFM</h2><h3 id="3-1-删除线"><a href="#3-1-删除线" class="headerlink" title="3.1 删除线"></a>3.1 删除线</h3><p>语法形式如下下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~ + 被删除的文字 + ~~</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~我在疯狂的copy~~</span><br></pre></td></tr></table></figure>
+
+<p><del>我在疯狂的copy</del></p>
+<h3 id="3-2-表情符号"><a href="#3-2-表情符号" class="headerlink" title="3.2 表情符号"></a>3.2 表情符号</h3><p>语法形式如下下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:表情代码:</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更多的表情代码参考：<br><a target="_blank" rel="noopener" href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">http://www.webpagefx.com/tools/emoji-cheat-sheet/</a></p>
+</blockquote>
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:smile:</span><br></pre></td></tr></table></figure>
+
+<p>:smile:</p>
+<h3 id="3-3-表格"><a href="#3-3-表格" class="headerlink" title="3.3 表格"></a>3.3 表格</h3><p>语法形式如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | ----- | ----- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>表头和请他行使用<code>-</code>来分隔;</li>
+<li>在分隔行中的<code>-</code>结尾或者开头添加<code>:</code>可以控制表格的对齐方式，开头加左对齐，结尾加右对齐，两端加居中对齐;</li>
+<li>引用区块和代码块不能插入到表格当中去;</li>
+<li>表格中的分隔符号<code>-</code>数量是不限制的。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 序号  | 性别  |    姓名    |</span><br><span class="line">| :---: | :---: | :--------: |</span><br><span class="line">|   1   |  女   | Angelababy |</span><br><span class="line">|   1   |  女   |   佟丽娅   |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">性别</th>
+<th align="center">姓名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">女</td>
+<td align="center">Angelababy</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">女</td>
+<td align="center">佟丽娅</td>
+</tr>
+</tbody></table>
+<h3 id="3-4-任务列表"><a href="#3-4-任务列表" class="headerlink" title="3.4 任务列表"></a>3.4 任务列表</h3><p>语法形式如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> + [ + 空格 + ] + 内容</span><br><span class="line"><span class="bullet">-</span> + [+ x + ] + 内容</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [ ] 今日是否完成戒烟目标</span><br><span class="line"><span class="bullet">-</span> [x] 今日是否给老婆请安</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><input disabled="" type="checkbox"> 今日是否完成戒烟目标</li>
+<li><input checked="" disabled="" type="checkbox"> 今日是否给老婆请安</li>
+</ul>
+<h3 id="3-5-围栏代码块"><a href="#3-5-围栏代码块" class="headerlink" title="3.5 围栏代码块"></a>3.5 围栏代码块</h3><p>语法形式如下所示：</p>
+<p>```语言名称</p>
+<p>代码片段</p>
+<p>```</p>
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>加入语言名称后，编辑器会提供语法高亮;</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<p>```python</p>
+<p>print(“hello python3”)</p>
+<p>```</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello python3&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-6-锚点"><a href="#3-6-锚点" class="headerlink" title="3.6 锚点"></a>3.6 锚点</h3><p>语法形式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">锚点描述</span>](<span class="link">#锚点名</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例：</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">回到顶部</span>](<span class="link">#markdown基本语法学习</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="#markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0">回到顶部</a></p>
+<blockquote>
+<p>注意事项：</p>
+<ul>
+<li>锚点名称中不能含有空格，也不能含有特殊字符;</li>
+<li>不适用html时，通常锚点就是markdown中的标题;</li>
+<li>如果使用其他的锚点，可以结合html进行内嵌操作;</li>
+</ul>
+</blockquote>
+<h2 id="4-编辑器"><a href="#4-编辑器" class="headerlink" title="4. 编辑器"></a>4. 编辑器</h2><h3 id="4-1-常使用的编辑器"><a href="#4-1-常使用的编辑器" class="headerlink" title="4.1 常使用的编辑器"></a>4.1 常使用的编辑器</h3><p>比较经常使用的两个编辑器是Typora和vscode,在参考的书籍中作者介绍了很多编辑器，这里只针对vscode涉及到的操作进行记录，有兴趣的朋友可以读读原书。</p>
+<p>vscode本身对于markdown的支持只包含一些简单的语法解析，如任务列表，表情代码都是不支持的，所有需要通过插件的方式对vscode进行扩展。</p>
+<h3 id="4-2-vscode中搭配的markdown插件"><a href="#4-2-vscode中搭配的markdown插件" class="headerlink" title="4.2 vscode中搭配的markdown插件"></a>4.2 vscode中搭配的markdown插件</h3><ol>
+<li>提供智能感知和快捷操作的插件：Markdown All in One<ul>
+<li>格式化表格(依托于vscode,<code>ALT + SHIFT + F</code>);</li>
+<li>图片路径自动联想;</li>
+<li>自定义代码片段(依托于vscode);;</li>
+</ul>
+</li>
+<li>提供语法检查的插件：markdownlint</li>
+<li>提供增强预览和更多扩展语法的插件：Markdown Preview Enhanced<ul>
+<li>在预览界面按<code>Esc</code>键可以调出标题大纲界面;</li>
+<li>该插件还支持Typora中的数学公式，流程图等功能;</li>
+<li>支持文件引入功能;<ul>
+<li>通过MPE插件可以进行文件的引用,支持引用.md, .html, .pdf, .png等格式的文件;</li>
+<li>引入格式为：<code>@import &quot;文件名&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>从剪切板直接粘贴图片的插件：Paste Image<ul>
+<li>在windows上使用Snipaste软件结合这个插件非常爽，F1截图-&gt;选择粘贴到剪切板-&gt;<code>ctrl + alt + v</code>直接粘贴到vscode正在编辑的markdown源码中;</li>
+<li>插入的图片在源文件的同级目录下;</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-3-工具支持的其他的扩展语法"><a href="#4-3-工具支持的其他的扩展语法" class="headerlink" title="4.3 工具支持的其他的扩展语法"></a>4.3 工具支持的其他的扩展语法</h3><p>虽然我们在上面的内容中了解基本的markdown语法和GFM扩展语言,但是一些比较有用的特殊的扩展语法我们也可以进一步了解一下，typora中的一些比较有用的扩展语法，在vscode中也可以通过MPE插件获取，所以接下来我们理解一下Typora中的一些常用的语法：</p>
+<ul>
+<li>高亮语法：<code>== + 内容 + ==</code>, 实例：==此处高亮==</li>
+<li>下划线： <code>&lt;u&gt; + 内容 + &lt;/u&gt;</code>, 实例：<u>此处添加下划线</u></li>
+<li>上标： <code>底部内容 + ^ + 上标内容 + ^</code>, 实例： x^2^</li>
+<li>下标： <code>底部内容 + ~ + 上标内容 + ~</code>, 实例： H<del>2</del>O</li>
+<li>数学公式： <code>$ + 数学公式 + $</code>, 实例：$f(x,y) = \frac{x^2}{y^3}$</li>
+<li>支持注释内容，注释的形式采用html的注释方式<code>&lt;!-- 注释内容 --&gt;</code></li>
+<li>通过使用<code>[TOC]</code>我们还可以生成目录，前面的内容写好后直接回车，就会在当前内容区生成目录</li>
+<li>脚注功能<a href="%E6%8F%8F%E8%BF%B0%E8%AF%A5%E8%A1%8C%E5%86%85%E5%AE%B9">^这是一个脚注功能</a></li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">脚注功能[^这是一个脚注功能]</span><br><span class="line">[<span class="symbol">^这是一个脚注功能</span>]: <span class="link">描述该行内容</span></span><br></pre></td></tr></table></figure>
+
+<p>Typora中还支持图表功能，但是我们通常使用其他程序去绘制图表，然后引入到markdown当中，所以这里不介绍图表功能的实现，我们接下来具体说明下内嵌html功能和数学公式表示功能。</p>
+<h3 id="4-4-内嵌html语法"><a href="#4-4-内嵌html语法" class="headerlink" title="4.4 内嵌html语法"></a>4.4 内嵌html语法</h3><p>在markdown的文件当中直接使用html标签既可以达到内嵌html标签的效果。</p>
+<h3 id="4-5-数学公式"><a href="#4-5-数学公式" class="headerlink" title="4.5 数学公式"></a>4.5 数学公式</h3><p>在markdown中引入数学公式主要是两种方式，前面介绍的行内，以及块级，语法格式如下所示：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">LaTeX 数学式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>Markdown中可以直接插入LaTeX数学式,具体的用法请查看以下博客</p>
+<p>具体内容可转至该博客查看：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/nowgood/p/Latexstart.html">https://www.cnblogs.com/nowgood/p/Latexstart.html</a></p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><ul>
+<li>通过书上面的介绍我们初步认识了markdown的相关知识，从基础语法，流行的GFM语法，以及工具的扩展语法，都有涉及，基本涵盖了日常写博客和写操作文档的需求。</li>
+<li>关于markdown更深层次的内容需要我们在日后花费更多的时间去探索和研究。</li>
+<li>当然在写markdown时如果想要达到美观的效果，花费心思去专研排版，也是必须的，否则可能跟我一样，看起来有点一言难尽。</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">markdown入门笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">0. 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Markdown%E7%AE%80%E4%BB%8B"><span class="toc-number">1.2.</span> <span class="toc-text">1. Markdown简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">2. Markdown基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%A0%87%E9%A2%98"><span class="toc-number">1.3.1.</span> <span class="toc-text">2.1 标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%B2%97%E4%BD%93%E5%92%8C%E6%96%9C%E4%BD%93"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.2 粗体和斜体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%AE%B5%E8%90%BD%E4%B8%8E%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.3.3.</span> <span class="toc-text">2.3 段落与换行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%88%97%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">2.4 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.3.5.</span> <span class="toc-text">2.5 分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E5%9B%BE%E7%89%87%E5%92%8C%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.6.</span> <span class="toc-text">2.6 图片和链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%E5%92%8C%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.3.7.</span> <span class="toc-text">2.7 行内代码和代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E5%BC%95%E7%94%A8"><span class="toc-number">1.3.8.</span> <span class="toc-text">2.8 引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-%E8%BD%AC%E4%B9%89"><span class="toc-number">1.3.9.</span> <span class="toc-text">2.9 转义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95GFM"><span class="toc-number">1.4.</span> <span class="toc-text">3 扩展语法GFM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.4.1.</span> <span class="toc-text">3.1 删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.4.2.</span> <span class="toc-text">3.2 表情符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.3 表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.4.</span> <span class="toc-text">3.4 任务列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E5%9B%B4%E6%A0%8F%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.4.5.</span> <span class="toc-text">3.5 围栏代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E9%94%9A%E7%82%B9"><span class="toc-number">1.4.6.</span> <span class="toc-text">3.6 锚点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.5.</span> <span class="toc-text">4. 编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.5.1.</span> <span class="toc-text">4.1 常使用的编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-vscode%E4%B8%AD%E6%90%AD%E9%85%8D%E7%9A%84markdown%E6%8F%92%E4%BB%B6"><span class="toc-number">1.5.2.</span> <span class="toc-text">4.2 vscode中搭配的markdown插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E5%B7%A5%E5%85%B7%E6%94%AF%E6%8C%81%E7%9A%84%E5%85%B6%E4%BB%96%E7%9A%84%E6%89%A9%E5%B1%95%E8%AF%AD%E6%B3%95"><span class="toc-number">1.5.3.</span> <span class="toc-text">4.3 工具支持的其他的扩展语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E5%86%85%E5%B5%8Chtml%E8%AF%AD%E6%B3%95"><span class="toc-number">1.5.4.</span> <span class="toc-text">4.4 内嵌html语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">1.5.5.</span> <span class="toc-text">4.5 数学公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">5. 总结</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&text=markdown简介"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&is_video=false&description=markdown简介"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=markdown简介&body=Check out this article: http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&title=markdown简介"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&name=markdown简介&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/markdown%E7%AE%80%E4%BB%8B/&t=markdown简介"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    achui
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

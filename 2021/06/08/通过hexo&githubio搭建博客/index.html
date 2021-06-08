@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="内容截取">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过hexo&amp;githubio搭建博客">
+<meta property="og:url" content="http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="runoob-achui">
+<meta property="og:description" content="内容截取">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-08T14:27:17.000Z">
+<meta property="article:modified_time" content="2021-06-08T16:28:20.717Z">
+<meta property="article:author" content="achui">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>通过hexo&amp;githubio搭建博客</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post " href="/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&text=通过hexo&amp;githubio搭建博客"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&is_video=false&description=通过hexo&amp;githubio搭建博客"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=通过hexo&amp;githubio搭建博客&body=Check out this article: http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&name=通过hexo&amp;githubio搭建博客&description=&lt;p&gt;内容截取&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&t=通过hexo&amp;githubio搭建博客"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Hexo%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">1. Hexo概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%90%AF%E5%8A%A8"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 安装与启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 项目的结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Next%E4%B8%BB%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="toc-number">3.1.2.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scheme"><span class="toc-number">3.1.3.</span> <span class="toc-text">Scheme</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E9%A1%B9"><span class="toc-number">3.1.3.1.</span> <span class="toc-text">站点配置文件的常用设置项</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        通过hexo&amp;githubio搭建博客
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">achui</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-06-08T14:27:17.000Z" itemprop="datePublished">2021-06-08</time>
+        
+        (Updated: <time datetime="2021-06-08T16:28:20.717Z" itemprop="dateModified">2021-06-09</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>内容截取</p>
+<span id="more"></span>
+
+<p>[TOC]</p>
+<hr>
+<p>通过Hexo项目结合GitHub Page搭建属于自己的博客</p>
+<hr>
+<h2 id="1-Hexo概述"><a href="#1-Hexo概述" class="headerlink" title="1. Hexo概述"></a>1. Hexo概述</h2><h3 id="1-1-简介"><a href="#1-1-简介" class="headerlink" title="1.1 简介"></a>1.1 简介</h3><p>Hexo 是一个博客框架。Hexo 使用 Markdown (或其他渲染引擎）解析文章，并生成静态资源站点。</p>
+<h3 id="1-2-安装与启动"><a href="#1-2-安装与启动" class="headerlink" title="1.2 安装与启动"></a>1.2 安装与启动</h3><ol>
+<li>环境准备</li>
+</ol>
+<p>安装<code>Hexo</code>项目前需要先保证机器上包含以下依赖工具</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">nodejs安装地址</a></li>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/">git安装地址</a></li>
+</ul>
+<ol start="2">
+<li>安装Hexo</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 国内使用npm可能比较慢，可以换淘宝的源</span></span><br><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>新建博客项目</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Hexo 将会在指定文件夹中新建所需要的文件, 不给定则默认使用当前目录</span></span><br><span class="line">hexo init &lt;folder&gt;  # 新建一个网站</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install  # 安装依赖</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>初始化<code>Hexo</code>, 在<code>windows10</code>下通过<code>dos</code>命令行可能会提示<code>git</code>无法加载的错误，可以使用<code>Git bash</code>执行初始化或者为<code>git</code>配置下环境变量</p>
+</blockquote>
+<ol start="4">
+<li>本地预览项目</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 默认访问 http://127.0.0.1:4000/</span></span><br><span class="line">hexo server  # 启动服务器 命令可简写为hexo s</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-项目的结构"><a href="#1-3-项目的结构" class="headerlink" title="1.3 项目的结构"></a>1.3 项目的结构</h3><p> 初始化后的项目目录结构如下（<code>linux</code>上通过<code>tree -L 1</code>查看目录结构）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">d-----        2020/11/21     15:25                node_modules</span><br><span class="line">d-----        2020/11/21     15:16                scaffolds</span><br><span class="line">d-----        2020/11/21     15:16                source</span><br><span class="line">d-----        2020/11/21     15:16                themes</span><br><span class="line">-a----        2020/11/21     15:16             71 .gitignore</span><br><span class="line">-a----        2020/11/21     15:26          21142 db.json</span><br><span class="line">-a----        2020/11/21     15:18          56483 package-lock.json</span><br><span class="line">-a----        2020/11/21     15:26            581 package.json</span><br><span class="line">-a----        2020/11/21     15:16           2545 _config.yml</span><br></pre></td></tr></table></figure>
+
+<p>当前目录下需要关注的文件主要有：</p>
+<ul>
+<li><code>_config.yml</code>: 网站的主配置文件，配置主题，语言等;</li>
+<li><code>scaffolds</code>: 模板文件夹, 模板是指在新建的文章文件中默认填充的内容;</li>
+<li><code>source</code>: 资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去;</li>
+<li><code>theme</code>: 主题文件夹，用于存放<code>Hexo</code>的主题资源;</li>
+</ul>
+<p>常用命令解析，<code>[]</code>括号中的内容都是可选项。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]  # 新建一个项目</span><br><span class="line"></span><br><span class="line">hexo new [layout] &lt;title&gt;  # 新建一篇文章</span><br><span class="line"></span><br><span class="line">新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;first paper&quot;</span><br><span class="line">INFO  Validating config</span><br><span class="line">Inferno is in development mode.</span><br><span class="line">INFO  =======================================</span><br><span class="line"> ██╗ ██████╗ █████╗ ██████╗ ██╗   ██╗███████╗</span><br><span class="line"> ██║██╔════╝██╔══██╗██╔══██╗██║   ██║██╔════╝</span><br><span class="line"> ██║██║     ███████║██████╔╝██║   ██║███████╗</span><br><span class="line"> ██║██║     ██╔══██║██╔══██╗██║   ██║╚════██║</span><br><span class="line"> ██║╚██████╗██║  ██║██║  ██║╚██████╔╝███████║</span><br><span class="line"> ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝</span><br><span class="line">=============================================</span><br><span class="line">INFO  === Checking package dependencies ===</span><br><span class="line">INFO  === Checking theme configurations ===</span><br><span class="line">INFO  === Registering Hexo extensions ===</span><br><span class="line">INFO  Created: D:\gitLocal\myblog\source\_posts\first-paper.md</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ul>
+<li><p>站点根目录下的配置文件 <code>_config.yml</code>称为<strong>站点配置文件</strong></p>
+</li>
+<li><p>主题目录下的配置文件<code>_config.yml</code>称为<strong>主题配置文件</strong></p>
+</li>
+</ul>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h3 id="Next主题"><a href="#Next主题" class="headerlink" title="Next主题"></a>Next主题</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> your-hexo-site</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h4><p> 在<strong>站点配置文件</strong>的如下位置更换主题</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<h4 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a><strong>Scheme</strong></h4><p>Next提供了多种视觉布局方案，在<strong>主题配置文件</strong>中，设置以下项</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Schemes</span></span><br><span class="line">scheme: Muse</span><br><span class="line"><span class="meta">#</span><span class="bash">scheme: Mist</span></span><br><span class="line"><span class="meta">#</span><span class="bash">scheme: Pisces</span></span><br><span class="line"><span class="meta">#</span><span class="bash">scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h5 id="站点配置文件的常用设置项"><a href="#站点配置文件的常用设置项" class="headerlink" title="站点配置文件的常用设置项"></a>站点配置文件的常用设置项</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Site</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 网站标题</span></span><br><span class="line">title: 追寻企鹅</span><br><span class="line"><span class="meta">#</span><span class="bash"> 网站副标题</span></span><br><span class="line">subtitle: &#x27;寻鹅人&#x27;</span><br><span class="line">description: &#x27;学习笔记 读书 分享 读后感&#x27;</span><br><span class="line">keywords: &#x27;学习笔记 读书 分享 读后感&#x27;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 用于主题显示文章的作者</span></span><br><span class="line">author: achui</span><br><span class="line"><span class="meta">#</span><span class="bash"> 网站使用的语言 zh-Hans / en</span></span><br><span class="line">language: zh-Hans</span><br><span class="line"><span class="meta">#</span><span class="bash"> 网站时区</span></span><br><span class="line">timezone: &#x27;Asia/Shanghai&#x27;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>访问<code>http://localhost:4000/</code>时如果报如下错误，则</p>
+<p>原因是hexo在5.0之后把swig给删除了需要自己手动安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-renderer-swig</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;</span><br><span class="line">&#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;</span><br><span class="line">&#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Hexo%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">1. Hexo概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%90%AF%E5%8A%A8"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 安装与启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 项目的结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Next%E4%B8%BB%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">Next主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="toc-number">3.1.2.</span> <span class="toc-text">启用主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scheme"><span class="toc-number">3.1.3.</span> <span class="toc-text">Scheme</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E9%A1%B9"><span class="toc-number">3.1.3.1.</span> <span class="toc-text">站点配置文件的常用设置项</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&text=通过hexo&amp;githubio搭建博客"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&is_video=false&description=通过hexo&amp;githubio搭建博客"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=通过hexo&amp;githubio搭建博客&body=Check out this article: http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=通过hexo&amp;githubio搭建博客"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&name=通过hexo&amp;githubio搭建博客&description=&lt;p&gt;内容截取&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/%E9%80%9A%E8%BF%87hexo&amp;githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&t=通过hexo&amp;githubio搭建博客"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    achui
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

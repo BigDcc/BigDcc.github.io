@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="[TOC]  命名法是编写程序的一套命名规则，这里介绍三种常用的命名规则。  1 匈牙利命名法该命名规范，要求前缀字母用变量类型的缩写，其余部分用变量的英文或英文的缩写，单词第一个字母大写。 通常在静态语言中配合类型声明使用。 1String sMyName &#x3D; &quot;achui&quot;; 匈牙利命名法中常用的小写字母的前缀。    前　缀 类　　型    i 整型   n 短整型 (S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="命名法">
+<meta property="og:url" content="http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/index.html">
+<meta property="og:site_name" content="runoob-achui">
+<meta property="og:description" content="[TOC]  命名法是编写程序的一套命名规则，这里介绍三种常用的命名规则。  1 匈牙利命名法该命名规范，要求前缀字母用变量类型的缩写，其余部分用变量的英文或英文的缩写，单词第一个字母大写。 通常在静态语言中配合类型声明使用。 1String sMyName &#x3D; &quot;achui&quot;; 匈牙利命名法中常用的小写字母的前缀。    前　缀 类　　型    i 整型   n 短整型 (S">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-08T14:27:17.000Z">
+<meta property="article:modified_time" content="2021-06-08T16:28:34.547Z">
+<meta property="article:author" content="achui">
+<meta property="article:tag" content="概念">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>命名法</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post " href="/2021/06/08/%E9%80%9A%E8%BF%87hexo&githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&text=命名法"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&is_video=false&description=命名法"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=命名法&body=Check out this article: http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&name=命名法&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&t=命名法"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8C%88%E7%89%99%E5%88%A9%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1 匈牙利命名法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%A9%BC%E5%B3%B0%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">2 驼峰命名法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E5%B0%8F%E9%A9%BC%E5%B3%B0"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 小驼峰</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-%E5%A4%A7%E9%A9%BC%E5%B3%B0"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 大驼峰</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%B8%8B%E5%88%92%E7%BA%BF%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">3 下划线命名法</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        命名法
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">achui</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-06-08T14:27:17.000Z" itemprop="datePublished">2021-06-08</time>
+        
+        (Updated: <time datetime="2021-06-08T16:28:34.547Z" itemprop="dateModified">2021-06-09</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%A6%82%E5%BF%B5/" rel="tag">概念</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>[TOC]</p>
+<hr>
+<p><strong>命名法</strong>是编写程序的一套命名规则，这里介绍三种常用的命名规则。</p>
+<hr>
+<h4 id="1-匈牙利命名法"><a href="#1-匈牙利命名法" class="headerlink" title="1 匈牙利命名法"></a>1 匈牙利命名法</h4><p>该命名规范，要求前缀字母用变量类型的缩写，其余部分用变量的英文或英文的缩写，单词第一个字母大写。</p>
+<p>通常在静态语言中配合类型声明使用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String sMyName = <span class="string">&quot;achui&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>匈牙利命名法中常用的小写字母的前缀。</p>
+<table>
+<thead>
+<tr>
+<th>前　缀</th>
+<th>类　　型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>i</td>
+<td>整型</td>
+</tr>
+<tr>
+<td>n</td>
+<td>短整型 (Short Int)</td>
+</tr>
+<tr>
+<td>l</td>
+<td>长整型 (Long Int)</td>
+</tr>
+<tr>
+<td>c</td>
+<td>有符号字符 (Char)</td>
+</tr>
+<tr>
+<td>by</td>
+<td>字节 (Byte)</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Word</td>
+</tr>
+<tr>
+<td>b</td>
+<td>布尔值 (Boolean)</td>
+</tr>
+<tr>
+<td>s</td>
+<td>字符串型</td>
+</tr>
+<tr>
+<td>a</td>
+<td>数组 (Array)</td>
+</tr>
+<tr>
+<td>p</td>
+<td>指针(Pointer)</td>
+</tr>
+<tr>
+<td>lp</td>
+<td>长指针(Long Pointer)</td>
+</tr>
+<tr>
+<td>m_</td>
+<td>类的成员</td>
+</tr>
+<tr>
+<td>fn</td>
+<td>函数</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Handle（句柄）</td>
+</tr>
+</tbody></table>
+<h4 id="2-驼峰命名法"><a href="#2-驼峰命名法" class="headerlink" title="2 驼峰命名法"></a>2 驼峰命名法</h4><p>驼峰命名法是指混合使用大小写字母来构成变量和函数等的名称，通常分为两种形式：</p>
+<ul>
+<li>小驼峰（也可代指驼峰命名法）</li>
+<li>大驼峰（又称帕斯卡命名法）</li>
+</ul>
+<h5 id="2-1-小驼峰"><a href="#2-1-小驼峰" class="headerlink" title="2.1 小驼峰"></a>2.1 小驼峰</h5><p>小驼峰规定除第一个单词之外, 其他单词首字母大写, <code>js</code>中常使用该方式命名。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myName = <span class="string">&quot;achui&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-大驼峰"><a href="#2-2-大驼峰" class="headerlink" title="2.2 大驼峰"></a>2.2 大驼峰</h5><p>相比小驼峰法，大驼峰法把第一个单词的首字母也大写了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MyName = <span class="string">&quot;achui&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-下划线命名法"><a href="#3-下划线命名法" class="headerlink" title="3 下划线命名法"></a>3 下划线命名法</h4><p>该命名规范，要求单词与单词之间通过下划线连接即可，<code>python</code>和<code>shell</code>脚本中常使用该方法命名。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">my_name = <span class="string">&quot;achui&quot;</span>;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8C%88%E7%89%99%E5%88%A9%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1 匈牙利命名法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%A9%BC%E5%B3%B0%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">2 驼峰命名法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E5%B0%8F%E9%A9%BC%E5%B3%B0"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 小驼峰</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-%E5%A4%A7%E9%A9%BC%E5%B3%B0"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 大驼峰</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%B8%8B%E5%88%92%E7%BA%BF%E5%91%BD%E5%90%8D%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">3 下划线命名法</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&text=命名法"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&is_video=false&description=命名法"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=命名法&body=Check out this article: http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&title=命名法"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&name=命名法&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/&t=命名法"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2021
+    achui
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
