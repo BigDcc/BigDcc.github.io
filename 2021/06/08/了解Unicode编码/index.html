@@ -13,14 +13,14 @@
 <meta property="og:site_name" content="runoob-achui">
 <meta property="og:description" content="[TOC]  程序为什么会乱码？ 通过了解编码知识，可以更好的了解这是为什么。  1 文本文件与二进制文件根据我们以往的经验，文本文件通常用来保存肉眼可见的字符，比如 .txt 文件、.c 文件、.dat 文件等，用文本编辑器打开这些文件，我们能够顺利看懂文件的内容。而二进制文件通常用来保存视频、图片、音频等不可阅读的内容，当用文本编辑器打开这些文件，会看到一堆乱码，根本看不懂。 实际上，从数据存">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/06/08/%E4%BA%86%E8%A7%A3Unicode%E7%BC%96%E7%A0%81/_data/res/001.png">
-<meta property="og:image" content="http://example.com/2021/06/08/%E4%BA%86%E8%A7%A3Unicode%E7%BC%96%E7%A0%81/res/002.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/BigDcc/imageHosting/master/image/blog/001/001.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/BigDcc/imageHosting/master/image/blog/001/002.png">
 <meta property="article:published_time" content="2021-06-08T14:27:17.000Z">
-<meta property="article:modified_time" content="2021-06-08T16:28:47.773Z">
+<meta property="article:modified_time" content="2021-06-09T23:12:45.744Z">
 <meta property="article:author" content="achui">
 <meta property="article:tag" content="概念">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/06/08/%E4%BA%86%E8%A7%A3Unicode%E7%BC%96%E7%A0%81/_data/res/001.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/BigDcc/imageHosting/master/image/blog/001/001.png">
     
     
       
@@ -91,7 +91,7 @@
         <li><a class="icon" aria-label="Previous post " href="/2021/06/08/markdown%E7%AE%80%E4%BB%8B/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
-        <li><a class="icon" aria-label="Next post " href="/2021/06/08/%E5%91%BD%E5%90%8D%E6%B3%95/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Next post " href="/2021/06/08/%E9%80%9A%E8%BF%87hexo&githubio%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -145,7 +145,7 @@
       
         <time datetime="2021-06-08T14:27:17.000Z" itemprop="datePublished">2021-06-08</time>
         
-        (Updated: <time datetime="2021-06-08T16:28:47.773Z" itemprop="dateModified">2021-06-09</time>)
+        (Updated: <time datetime="2021-06-09T23:12:45.744Z" itemprop="dateModified">2021-06-10</time>)
         
       
     </div>
@@ -187,7 +187,7 @@
 </ul>
 <p>在规划好要表示的字符后，人们用十进制数对每一个字符进行了对应，这个对应的字符叫做码位，然后将码位转换成了二进制数，以方便计算机的表示，即我们常说的<code>ASCII码</code>，又叫做<code>ASCII字符集</code>。</p>
 <h4 id="3-ASCII码"><a href="#3-ASCII码" class="headerlink" title="3 ASCII码"></a>3 ASCII码</h4><p><code>ASCII</code>字符集定义了从0到127的字符编码。并且规定一个字符存储在一个8位的字节中。（在计算机中我们使用二进制来表示各种字符，一个字节等于8bit，既一个字节是由8位二进制组成的，根据排列组合的原则，一个字节可以表示256种不同的东西，将一个字节转换为十进制，则分别对应0到255，这样，我们可以通过这些不同的类型，代表我们要表达的字符）对应关系如下图所示。</p>
-<p><img src="_data/res/001.png" alt="ASCII码表"></p>
+<p><img src="https://raw.githubusercontent.com/BigDcc/imageHosting/master/image/blog/001/001.png" alt="ASCII码表"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0111 1111  =&gt; 127</span><br><span class="line">左边四位是高四位，右边四位是低四位</span><br></pre></td></tr></table></figure>
 
 <h4 id="4-扩展ASCII码"><a href="#4-扩展ASCII码" class="headerlink" title="4 扩展ASCII码"></a>4 扩展ASCII码</h4><p>在相当长的一段时间内，人们使用剩下的128到255这段中的字符去表示各种各样不同的语言中的字符，如西欧的<code>Latin-1</code>字符集。它在<code>ASCII</code>的基础上对剩余位置进行了扩充。</p>
@@ -197,7 +197,7 @@
 <h4 id="6-Unicode字符集"><a href="#6-Unicode字符集" class="headerlink" title="6 Unicode字符集"></a>6 Unicode字符集</h4><p>由于各个国家都采用了不同的字符集去表示各自国家的文字，导致了信息交换的困难，最后国际组织采用了<code>unicode</code>字符集表示规则，该表示规则尽可能的包含各国的不同字符，所以可以通过通用的<code>unicode</code>来表示各个国家常用的字符。</p>
 <p><code>unicode</code>是一套字符集表示规则，但是他的存储方式却有很多种，因为不同的字符集在存储时，占用的字节数并不相同，造成了空间浪费。所以产生了各种各样的编码方式，比如<code>utf-8</code>一种可变长度的编码形式，他采用不同的字节来保存不同的字符。</p>
 <p><code>UTF-8</code>是我们比较常用的一种编码方式。</p>
-<p><img src="./res/002.png" alt="编码演示"></p>
+<p><img src="https://raw.githubusercontent.com/BigDcc/imageHosting/master/image/blog/001/002.png" alt="编码演示"></p>
 
   </div>
 </article>
